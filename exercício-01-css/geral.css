@@ -1,0 +1,28 @@
+body {
+  margin: 10;
+  font-family: tahoma;
+  color: #000;
+  background-color: #fff;
+}
+
+#menu ul{
+  margin: 0;
+  background-color: #3385ff;
+  list-style: none;
+}
+
+#menu ul li{
+  display: inline;
+
+}
+
+#menu ul li a{
+  padding: 10px 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+#menu ul li a:hover{
+  color: #004d00;
+}

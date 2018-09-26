@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+}
+
+tbody tr: hover {
+  background-color: #c6c6c6
+}
+
+tfoot tr: hover{
+  background-color: #00BFFF;
+}

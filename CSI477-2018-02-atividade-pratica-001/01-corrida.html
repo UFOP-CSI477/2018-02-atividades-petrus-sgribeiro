@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Corrida</title>
+
+    <link rel="stylesheet" href="./bootstrap-4.1.3-dist/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="jumbotron" style="background-color:lightgreen">
+      <h1>Competição de carrinhos de rolimã</h1>
+    </div>
+
+
+    <div class="container">
+
+    <h2> Insira os competidores </h2>
+
+    <div class="container">
+
+      <form name="competidores">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar1">Largada</label>
+              <p>1</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome1">Nome 1</label>
+              <input type="text" name="nome1" id="nome1" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo1">Tempo 1 (s)</label>
+              <input type="number" name="tempo1" id="tempo1" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar2"></label>
+              <p>2</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome2">Nome 2</label>
+              <input type="text" name="nome2" id="nome2" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo2">Tempo 2 (s)</label>
+              <input type="number" name="tempo2" id="tempo2" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar3"></label>
+              <p>3</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome3">Nome 3</label>
+              <input type="text" name="nome3" id="nome3" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo3">Tempo 3 (s)</label>
+              <input type="number" name="tempo3" id="tempo3" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar4"></label>
+              <p>4</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome4">Nome 4</label>
+              <input type="text" name="nome4" id="nome4" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo4">Tempo 4 (s)</label>
+              <input type="number" name="tempo4" id="tempo4" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar5"></label>
+              <p>5</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome5">Nome 5</label>
+              <input type="text" name="nome5" id="nome5" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo5">Tempo 5 (s)</label>
+              <input type="number" name="tempo5" id="tempo5" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lar6"></label>
+              <p>6</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="nome1">Nome 6</label>
+              <input type="text" name="nome6" id="nome6" class="form-control">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="tempo6">Tempo 6 (s)</label>
+              <input type="number" name="tempo6" id="tempo6" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="registrar()" style="background-color:grey">Registrar</button>
+
+      </form>
+
+      <br></br>
+
+      <h2> Tabela Inicial </h2>
+
+        <div class="table-responsive">
+
+          <table name="inicial" id="tabela" class="table table-bordered table-striped table-hover">
+
+      			<!-- Cabeçalho //-->
+      			<thead class="thead-dark">
+      				<tr>
+                <th>Posição de Chegada</td>
+      					<th>Posição de Largada</th>
+      					<th>Nome</th>
+      					<th>Tempo</th>
+                <th>Vecedor</th>
+      				</tr>
+      			</thead>
+
+      				<!-- Dados //-->
+      				<tbody>
+
+      				</tbody>
+
+      				<tfoot>
+      					<tr>
+      						<td colspan="2">Total de competidores:</td>
+      						<td id="total" colspan="3"></td>
+      					</tr>
+      				</tfoot>
+
+      			</table>
+        	</div>
+
+      </div>
+
+
+
+      <script src="01-corrida.js"></script>
+      <script src="jquery-3.3.1.js"></script>
+
+  </body>
+</html>

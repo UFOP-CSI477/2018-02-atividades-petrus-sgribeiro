@@ -1,0 +1,2 @@
+Atualização da atividade até o final do semestre
+Possível migração do PHP puro para o PHP com o Laravel

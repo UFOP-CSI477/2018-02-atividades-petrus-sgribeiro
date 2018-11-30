@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', 'paginasController@index');
+Route::get('/', function () {
+    return view('index');
+});
 
-Route::get('/info', 'paginasController@about');
+Route::get('/registros', 'ControladorRegistro@index');
 
-Route::get('/lista', 'paginasController@listar');
+Route::get('/equipamentos', 'ControladorEquipamento@index');
 
-Route::get('/estados', 'EstadoController@index');
+Route::get('/equipamentos/novo', 'ControladorEquipamento@create');
+
+Route::post('/equipamentos', 'ControladorEquipamento@store');
+
+Route::get('/equipamentos/apagar/{id}', 'ControladorEquipamento@destroy');
+
+Route::get('/equipamentos/editar/{id}', 'ControladorEquipamento@edit');
+
+Route::post('/equipamentos/{id}', 'ControladorEquipamento@update');

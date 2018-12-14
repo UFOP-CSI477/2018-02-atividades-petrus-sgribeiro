@@ -1,0 +1,11 @@
+Informações sobre a prova:
+Ferramentas utilizadas
+Laravel: 5.7.13
+Nodejs: 10.14.1 
+NPM: 6.4.1
+Navegador: Chrome 70
+PHP: 7.1.9
+phpmyadmin: 4.7.4
+Apache: 2.4.27
+MySQL: 5.7.19
+WAMP Serever: 3.1.0

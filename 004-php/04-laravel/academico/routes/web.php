@@ -11,20 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PaginasController@index');
+Route::get('/info', 'PaginasController@about');
 
-Route::get('/registros', 'ControladorRegistro@index');
+Route::get('/lista', 'PaginasController@listar');
+Route::get('/contato', 'PaginasController@contato');
 
-Route::get('/equipamentos', 'ControladorEquipamento@index');
+Route::resource('/estados', 'EstadoController');
+Route::resource('/cidades', 'CidadeController');
 
-Route::get('/equipamentos/novo', 'ControladorEquipamento@create');
+Auth::routes();
 
-Route::post('/equipamentos', 'ControladorEquipamento@store');
-
-Route::get('/equipamentos/apagar/{id}', 'ControladorEquipamento@destroy');
-
-Route::get('/equipamentos/editar/{id}', 'ControladorEquipamento@edit');
-
-Route::post('/equipamentos/{id}', 'ControladorEquipamento@update');
+Route::get('/home', 'HomeController@index')->name('home');

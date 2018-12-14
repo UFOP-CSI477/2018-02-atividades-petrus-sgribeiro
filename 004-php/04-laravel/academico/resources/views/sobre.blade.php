@@ -3,6 +3,5 @@
 
 
 @section('conteudo')
-    <h1>Página principal</h1>
-
+  <h1>Informações sobre a aplicação</h1>
 @endsection
